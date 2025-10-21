@@ -5,7 +5,7 @@ This repository demonstrates a **basic CI/CD pipeline** using **GitHub Actions**
 ---
 
 ## 🗂 Project Structure
-
+```text
 ci-cd-demo/
 ├── app/
 │ ├── init.py
@@ -20,8 +20,7 @@ ci-cd-demo/
 └── deploy.yml # Deploys app on successful tests
 
 yaml
-Copier le code
-
+```
 ---
 
 ## ⚙️ Features
