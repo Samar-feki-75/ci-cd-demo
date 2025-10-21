@@ -1,0 +1,16 @@
+name: Deploy to Test
+
+on:
+  push:
+    branches: [ master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+    - uses: actions/checkout@v3
+    - name: Deploy Files
+      run: |
+        mkdir -p /tmp/test-deploy
+        cp -r app/* /tmp/test-deploy/
